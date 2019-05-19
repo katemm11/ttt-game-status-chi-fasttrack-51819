@@ -14,6 +14,7 @@ def won?(board)
      
      return win_combination
   elsif board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  false
   else
     false
   end
