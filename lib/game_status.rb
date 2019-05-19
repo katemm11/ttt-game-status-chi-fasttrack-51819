@@ -9,7 +9,7 @@ WIN_COMBINATIONS =
 
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combation|
+  WIN_COMBINATIONS.each do |win_combination|
   if position_taken?(win_combination[0]) && position_taken?(win_combination[1]) && position_taken?(win_combination[2])
     return win_combination
   else
