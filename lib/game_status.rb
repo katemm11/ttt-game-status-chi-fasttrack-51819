@@ -16,6 +16,7 @@ def won?(board)
     board.each do |place|
       if place == 0
   return false
+end
   else
     false
   end
