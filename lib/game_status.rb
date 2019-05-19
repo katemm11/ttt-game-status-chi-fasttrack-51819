@@ -10,6 +10,7 @@ WIN_COMBINATIONS =
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
+    p board[win_combination[0]] == board[win_combination[1]]
   if position_taken?(board, win_combination[0]) && position_taken?(board, win_combination[1]) && position_taken?(board, win_combination[2]) && board[win_combination[0]] == board[win_combination[1]] && board[win_combination[1]] == board[win_combination[2]]
      
      return win_combination
